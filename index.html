@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container header-container">
             <nav class="nav-container">
@@ -46,7 +45,7 @@
 
     <main>
 
-        
+
 
 
 
@@ -111,17 +110,16 @@
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class="work-list-item img-container">
-                            <img src="./images/plan.jpg" alt="Планирование на бумаге" width="370"
-                            height="295">
-                            <h3 class="work-img-text">Десктопные приложения</h3>
+                        <img src="./images/plan.jpg" alt="Планирование на бумаге" width="370" height="295">
+                        <h3 class="work-img-text">Десктопные приложения</h3>
                     </li>
                     <li class="work-list-item img-container">
-                            <img src="./images/notebook.jpg" alt="Ноутбук" width="370" height="295">
-                            <h3 class="work-img-text">Мобильные приложения</h3>
+                        <img src="./images/notebook.jpg" alt="Ноутбук" width="370" height="295">
+                        <h3 class="work-img-text">Мобильные приложения</h3>
                     </li>
                     <li class="work-list-item img-container">
-                            <img src="./images/color.jpg" alt="Подбор цвета" width="370" height="295">
-                            <h3 class="work-img-text">Дизайнерские решения</h3>
+                        <img src="./images/color.jpg" alt="Подбор цвета" width="370" height="295">
+                        <h3 class="work-img-text">Дизайнерские решения</h3>
                     </li>
                 </ul>
             </div>
@@ -416,14 +414,49 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close class="modal-btn" type="button">
-                <svg class="modal-close-icon">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
+            <form class="modal-form">
+                <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+                <div class="form-field">
+                    <label class="form-field-name" for="user_name">Имя</label>
+                    <input type="name" name="name" id="user_name">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field-name" for="user_tel">Телефон</label>
+                    <input type="tel" name="tel" id="user_tel">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field-name" for="user_email">Почта</label>
+                    <input type="email" name="email" id="user_email">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field-name" for="feedback">Комментарий</label>
+                    <textarea class="textarea" name="feedback" id="feedback" placeholder="Введите текст"></textarea>
+                </div>
+
+                <div div class="form-field license">
+                    <input type="checkbox" name="license agreement" id="license agreement">
+                    <label for="license agreement">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                    </label>
+                </div>
+
+                <div>
+                    <button type="submit">Отправить</button>
+                </div>
+
+
+
+                <button data-modal-close class="modal-btn" type="button">
+                    <svg class="modal-close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
         </div>
     </div>
-<script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
