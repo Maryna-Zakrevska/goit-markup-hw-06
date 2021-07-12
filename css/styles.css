@@ -137,28 +137,50 @@ img {
 }
 
 .modal-form-title {
-font-weight: bold;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--text-color-main);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-main);
 }
 
-.form-field{
+.form-field {
   display: flex;
   flex-direction: column;
 }
 
 .form-field-name {
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
-color: var(--text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.input-div {
+  position: relative;
+}
+
+.icon-person-form {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-phone-form {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+}
+
+.icon-email-form {
+  position: absolute;
+  width: 15px;
+  height: 12px;
 }
 
 .form-field.license {
-flex-direction: row;
+  flex-direction: row;
 }
 
 .textarea {
